@@ -7,11 +7,6 @@ data_dict = data.to_dict()
 temp_list = data["Temperature"].to_list()
 
 
-total = 0
-
-for temp in temp_list:
-    total += temp
-
-average_temp = total//len(temp_list)
+average_temp = data["Temperature"].mean()
 
 print(average_temp)
